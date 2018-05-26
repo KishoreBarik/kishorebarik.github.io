@@ -10,7 +10,7 @@ http://www.templatemo.com/tm-493-snapshot
 ------------------------------------- */
 body {
     /* background: #ffffff;    */
-    font-family: 'Alex Brush', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     position: relative;
@@ -124,12 +124,18 @@ a:hover, a:active, a:focus {
   font-size: 30px;
 }
 
+.textRight{
+  text-align: right;
+}
+
 
 
 /*---------------------------------------
     All Section style              
 -----------------------------------------*/
-
+.fancy {
+  font-family: 'Alex Brush'
+}
 .section-title {
   padding-bottom: 62px;
 }
@@ -465,6 +471,7 @@ a:hover, a:active, a:focus {
 
 #about .description{
   color: yellow;
+  font-size: 18px;
 }
 
 

@@ -68,6 +68,11 @@ $(document).ready(function() {
             } else {
                 $('.go-top').fadeOut(200);
            }
+        if( $(window).scrollTop() == 0) {
+            $('.wow').removeClass('animated');
+            $('.wow').removeAttr('style');
+            new WOW().init();
+        }
     });   
           // Animate the scroll to top
     $('.go-top').click(function(event) {
@@ -83,15 +88,3 @@ $(document).ready(function() {
   });
 
   window.onbeforeunload = function(){ window.scrollTo(0,0); }
-
-  openMap() {
-    if(isMobile){
-        
-    }
-  }
-
-  isMobile() {
-    var mobilePlatforms = ["Android", "iPhone", "iPad",];
-    return mobilePlatforms.includes(navigator.platform);
-  }
-
